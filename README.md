@@ -1,6 +1,6 @@
 # Live-weather-dash
 
-This is an application that allows the user to search for any city and give i's current weather. The search results include things like temperature, wind, and humidity.
+This is an application that allows the user to search for any city and give it's current weather. The search results include things like temperature, wind, and humidity.
 
 
 ## Screenshots
