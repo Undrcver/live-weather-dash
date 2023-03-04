@@ -66,5 +66,23 @@ var getApis = function () {
                 var thirdDate = document.createElement('h4');
                 var fourthDate = document.createElement('h4');
                 var fifthDate = document.createElement('h4');
+
+                var firstTemp = document.createElement('p');
+                var secondTemp = document.createElement('p');
+                var thirdTemp = document.createElement('p');
+                var fourthTemp = document.createElement('p');
+                var fifthTemp = document.createElement('p');
+
+                var firstWind = document.createElement('p');
+                var secondWind = document.createElement('p');
+                var thirdWind = document.createElement('p');
+                var fourthWind = document.createElement('p');
+                var fifthWind = document.createElement('p');
+
+                var firstHumidity = document.createElement('p');
+                var secondHumidity = document.createElement('p');
+                var thirdHumidity = document.createElement('p');
+                var fourthHumidity = document.createElement('p');
+                var fifthHumidity = document.createElement('p');
         })
 };
