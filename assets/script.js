@@ -51,6 +51,20 @@ var getApis = function () {
                 })
                 .then(function (data) {
                     console.log(data);
+                    
                 })
+                weekHeader.textContent = 'weekly Forecast:';
+                
+                first.classList.add('day-container');
+                second.classList.add('day-container');
+                third.classList.add('day-container');
+                fourth.classList.add('day-container');
+                fifth.classList.add('day-container');
+
+                var firstDate = document.createElement('h4');
+                var secondate = document.createElement('h4');
+                var thirdDate = document.createElement('h4');
+                var fourthDate = document.createElement('h4');
+                var fifthDate = document.createElement('h4');
         })
 };
