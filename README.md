@@ -1,6 +1,6 @@
 # Live-weather-dash
 
-This is a weekly forecast creator using API calls that allow the user to gather a 5 day forecast of a city's weather.
+This is an application that allows the user to search for any city and give i's current weather. The search results include things like temperature, wind, and humidity.
 
 
 ## Screenshots
