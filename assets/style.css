@@ -48,17 +48,17 @@ form {
 }
 
 
-.city-box {
+.city {
     padding: 6px;
     margin: 2px 8px 2px 2px;
     border: solid 2px black;
 }
 
-.city-box p {
+.city p {
     margin-top: 10px;
 }
 
-.city-box h3 {
+.city h3 {
     font-size: x-large;
 }
 
