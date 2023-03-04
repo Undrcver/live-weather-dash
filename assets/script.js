@@ -99,3 +99,5 @@ var getApis = function () {
                 first.appendChild(firstHumidity);
         })
 };
+
+searchBtn.addEventListener('click', getApis);
