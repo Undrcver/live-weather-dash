@@ -84,5 +84,18 @@ var getApis = function () {
                 var thirdHumidity = document.createElement('p');
                 var fourthHumidity = document.createElement('p');
                 var fifthHumidity = document.createElement('p');
+
+
+                // day forcast //
+
+                firstDate.textContent = data.daily[0].dt;
+                firstTemp.textContent = 'Temp: ' + data.daily[0].temp.day + ' °F';
+                firstWind.textContent = 'Wind: ' + data.daily[0].wind_speed + ' MPH';
+                firstHumidity.textContent = 'Humidity: ' + data.daily[0].humidity + '%';
+
+                first.appendChild(firstDate);
+                first.appendChild(firstTemp);
+                first.appendChild(firstWind);
+                first.appendChild(firstHumidity);
         })
 };
