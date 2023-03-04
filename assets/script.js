@@ -1,4 +1,4 @@
-var apiKey = 'b2e84c46f018834647d0f36e3c4ac96f'
+var apiKey = '70cd7f91f800d28afddcb09daee627b7'
 var content = document.getElementById('content');
 var cityContainerEl = document.querySelector('#city-container');
 var searchBtn = document.querySelector('#search-btn');
@@ -28,8 +28,7 @@ var getApis = function () {
             var temp = document.createElement('p');
             var wind = document.createElement('p');
             var humidity = document.createElement('p');
-            var uvIndex = document.createElement('p');
-            var latitude = data.coord.lat;
+            var lat = data.coord.lat;
             var long = data.coord.lon;
 
 
@@ -43,7 +42,7 @@ var getApis = function () {
             cityContainerEl.appendChild(wind);
             cityContainerEl.appendChild(humidity);
 
-            var oneCallApi = "https://api.openweathermap.org/data/2.5/onecall?lat=" + latitude + "&lon=" + long + "&appid=" + apiKey + "&units=imperial";
+            var oneCallApi = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long + "&appid=" + apiKey + "&units=imperial";
 
             fetch(oneCallApi)
                 .then(function (response) {
@@ -62,7 +61,7 @@ var getApis = function () {
                 fifth.classList.add('day-container');
 
                 var firstDate = document.createElement('h4');
-                var secondate = document.createElement('h4');
+                var secondDate = document.createElement('h4');
                 var thirdDate = document.createElement('h4');
                 var fourthDate = document.createElement('h4');
                 var fifthDate = document.createElement('h4');
@@ -97,6 +96,46 @@ var getApis = function () {
                 first.appendChild(firstTemp);
                 first.appendChild(firstWind);
                 first.appendChild(firstHumidity);
+
+                secondDate.textContent = data.daily[1].dt;
+                secondTemp.textContent = 'Temp: ' + data.daily[1].temp.day + ' °F';
+                secondWind.textContent = 'Wind: ' + data.daily[1].wind_speed + ' MPH';
+                secondHumidity.textContent = 'Humidity: ' + data.daily[1].humidity + '%';
+
+                second.appendChild(secondDate);
+                second.appendChild(secondTemp);
+                second.appendChild(secondWind);
+                second.appendChild(secondHumidity);
+
+                thirdDate.textContent = data.daily[2].dt;
+                thirdTemp.textContent = 'Temp: ' + data.daily[2].temp.day + ' °F';
+                thirdWind.textContent = 'Wind: ' + data.daily[2].wind_speed + ' MPH';
+                thirdHumidity.textContent = 'Humidity: ' + data.daily[2].humidity + '%';
+
+                third.appendChild(thirdDate);
+                third.appendChild(thirdTemp);
+                third.appendChild(thirdWind);
+                third.appendChild(thirdHumidity);
+
+                fourthDate.textContent = data.daily[3].dt;
+                fourthTemp.textContent = 'Temp: ' + data.daily[3].temp.day + ' °F';
+                fourthWind.textContent = 'Wind: ' + data.daily[3].wind_speed + ' MPH';
+                fourthHumidity.textContent = 'Humidity: ' + data.daily[3].humidity + '%';
+
+                fourth.appendChild(fourthDate);
+                fourth.appendChild(fourthTemp);
+                fourth.appendChild(fourthWind);
+                fourth.appendChild(fourthHumidity);
+
+                fifthDate.textContent = data.daily[4].dt;
+                fifthTemp.textContent = 'Temp: ' + data.daily[4].temp.day + ' °F';
+                fifthWind.textContent = 'Wind: ' + data.daily[4].wind_speed + ' MPH';
+                fifthHumidity.textContent = 'Humidity: ' + data.daily[4].humidity + '%';
+
+                fifth.appendChild(fifthDate);
+                fifth.appendChild(fifthTemp);
+                fifth.appendChild(fifthWind);
+                fifth.appendChild(fifthHumidity);
         })
 };
 
