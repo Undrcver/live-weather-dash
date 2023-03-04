@@ -9,7 +9,7 @@ This is an application that allows the user to search for any city and give it's
 
 ## Links
 * [Repo](https://github.com/Undrcver/live-weather-dash)
-* [Webpage](https://undrcver.github.io/Daily-Scheduler/)
+* [Webpage](https://undrcver.github.io/live-weather-dash/)
 
 ## Languages Used
 -CSS -JavaScript -HTML
