@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, rgb(76, 18, 94), rgb(139, 126, 138));
+    color: white;
+    margin: (0, 0, 10px, 0);
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    padding: 15px;
+}
+
+h2, input {
+    margin: 8px;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+}
+
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin: 4px;
+}
+
+#content {
+    width: 80%;
+}
+
+
+.city-box {
+    padding: 6px;
+    margin: 2px 8px 2px 2px;
+    border: solid 2px black;
+}
+
+.city-box p {
+    margin-top: 10px;
+}
+
+.city-box h3 {
+    font-size: x-large;
+}
+
+
+#week-header {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+#five-days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+
+
+.day-container {
+    margin: 12px;
+    padding: 12px 30px 12px 12px;
+    background-color: rgba(110, 66, 103, 0.89);
+    color: white;
+    text-align: left;
+}
+
+.day-container h4 {
+    margin-bottom: 30px;
+}
+
+.day-container p {
+    margin-bottom: 30px;
+}
